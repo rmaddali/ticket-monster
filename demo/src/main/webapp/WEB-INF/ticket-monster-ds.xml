@@ -26,7 +26,7 @@
             <password>sa</password>
         </security>
     </datasource> -->
-    <datasource jndi-name="java:jboss/datasources/ticket-monsterDS"
+    <!-- <datasource jndi-name="java:jboss/datasources/ticket-monsterDS"
         pool-name="ticket-monster" enabled="true" use-java-context="true">
         <connection-url>jdbc:mysql://172.30.202.214:3306/ticketdb</connection-url>
         <driver>mysql</driver>
@@ -34,6 +34,6 @@
             <user-name>mysql</user-name>
             <password>redhat</password>
         </security>
-    </datasource>
+    </datasource> -->
 </datasources>
  
