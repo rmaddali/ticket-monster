@@ -17,13 +17,22 @@
     xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
     <!-- The datasource is bound into JNDI at this location. We reference 
         this in META-INF/persistence.xml -->
-    <datasource jndi-name="java:jboss/datasources/ticket-monsterDS"
+    <!-- <datasource jndi-name="java:jboss/datasources/ticket-monsterDS"
         pool-name="ticket-monster" enabled="true" use-java-context="true">
         <connection-url>jdbc:h2:mem:ticket-monster;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1</connection-url>
         <driver>h2</driver>
         <security>
             <user-name>sa</user-name>
             <password>sa</password>
+        </security>
+    </datasource> -->
+    <datasource jndi-name="java:jboss/datasources/ticket-monsterDS"
+        pool-name="ticket-monster" enabled="true" use-java-context="true">
+        <connection-url>jdbc:mysql://172.30.202.214:3306/ticketdb</connection-url>
+        <driver>mysql</driver>
+        <security>
+            <user-name>mysql</user-name>
+            <password>redhat</password>
         </security>
     </datasource>
 </datasources>
